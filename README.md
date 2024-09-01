@@ -62,6 +62,21 @@ const targetNode = document.getElementById('challenge-node');
 ReactDOM.render(<ComponentToRender />, targetNode or DomNode)
 React will display <App /> in the DomNode
 
-Render usually returns null. if reactNode is a class component then it will return an instance of that component.
+Render returns HTML from JSX or null. if reactNode is a class component then it will return an instance of that component.
+
+
+class MyComponent extends React.Component{   //Create a class react component (React components are class or function components)
+  constructor(props){			//call constructor for this created class. How?
+    super(props);			//use super to pulls the constructor of the components parent class and pass props to both
+  }
+  render(){			//Defines what the component will render
+    return(
+          <div id="challenge-node">
+            <h1>My First React Component!</h1>
+          </div>
+    );
+  }
+};
+ReactDOM.render(<MyComponent/>, document.getElementById("challenge-node"));
 
 
