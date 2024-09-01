@@ -51,5 +51,17 @@ render() {
 		</App>
 ):
 }
-}
+
+
+### Render a class Component or nested Components to the DOM
+<hr/>
+
+<ComponentToRender /> = <App />
+
+const targetNode = document.getElementById('challenge-node');
+ReactDOM.render(<ComponentToRender />, targetNode or DomNode)
+React will display <App /> in the DomNode
+
+Render usually returns null. if reactNode is a class component then it will return an instance of that component.
+
 
