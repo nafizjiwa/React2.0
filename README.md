@@ -65,8 +65,10 @@ render() {		//render method returns h1 element
 
 ##### Render returns HTML from JSX or null. if reactNode is a class component then it will return an instance of that component.
 
+###### (React components are class or function components)
 
-	class MyComponent extends React.Component{  //Create a class react component (React components are class or function components)
+
+	class MyComponent extends React.Component{  //Create a class react component 
 	  constructor(props){			//call constructor for this created class. How?
 	    super(props);		//use super to pulls the constructor of the components parent class and pass props to both
 	  }
