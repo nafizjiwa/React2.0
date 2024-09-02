@@ -69,8 +69,8 @@ class MyComponent extends React.Component{   //Create a class react component (R
   constructor(props){			//call constructor for this created class. How?
     super(props);			//use super to pulls the constructor of the components parent class and pass props to both
   }
-  render(){			//Defines what the component will render
-    return(
+  render(){			//Defines what our component will render
+    return(						//return the JSX code
           <div id="challenge-node">
             <h1>My First React Component!</h1>
           </div>
