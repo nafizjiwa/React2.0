@@ -56,18 +56,18 @@ render() {
 ### Render a class Component or nested Components to the DOM
 <hr/>
 
-<ComponentToRender /> = <App />
+	<ComponentToRender /> = <App />
+	
+	const targetNode = document.getElementById('challenge-node');
+	ReactDOM.render(<ComponentToRender />, targetNode or DomNode)
+	React will display <App /> in the DomNode
 
-const targetNode = document.getElementById('challenge-node');
-ReactDOM.render(<ComponentToRender />, targetNode or DomNode)
-React will display <App /> in the DomNode
-
-Render returns HTML from JSX or null. if reactNode is a class component then it will return an instance of that component.
+##### Render returns HTML from JSX or null. if reactNode is a class component then it will return an instance of that component.
 
 
-	class MyComponent extends React.Component{   //Create a class react component (React components are class or function components)
+	class MyComponent extends React.Component{  //Create a class react component (React components are class or function components)
 	  constructor(props){			//call constructor for this created class. How?
-	    super(props);			//use super to pulls the constructor of the components parent class and pass props to both
+	    super(props);		//use super to pulls the constructor of the components parent class and pass props to both
 	  }
 	  render(){			//Defines what our component will render
 	    return(						//return the JSX code
