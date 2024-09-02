@@ -36,21 +36,22 @@ render() {		//render method returns h1 element
 }
 }
 
-To compose multiple components create an App parent component to render each child
+##### To compose multiple components create an App parent component to render each child
 
-	const ChildComponent = ( ) => { return ( <div> Test </div> ); };
-class ParentComponent extends React.Component {
-   constructor(props) {
-	super(props);
-   }
-render() {
- 	    return (
-		<App>
-			<ChildComponent /> //here React encounter a reference to another component
-		
-		</App>
-):
-}
+	const ChildComponent = ( ) => { 
+ 		return ( <div> Test </div> ); 
+   	};
+	class ParentComponent extends React.Component {
+	   constructor(props) {
+		super(props);
+	   }
+	render() {
+	 	    return (
+			<App>
+			  <ChildComponent /> //here React encounter a reference to another component
+			</App>
+	):
+	}
 
 
 ### Render a class Component or nested Components to the DOM
