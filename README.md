@@ -31,16 +31,17 @@ Use className not class using camelCase eg. onClick
 	 <div>something her</div>
 	)};
 |2nd ES6 class syntax|
+
 	Class Demo extends React.Component {  //this class Demo extends React class
 		constructor(props) { //Demo class has a constructor METHOD defined
-super(props);	//Constructor uses super to call the Parents constructor 
-}				//and also passes props to both
-render() {		//render method returns h1 element
-    return (
-	<h1>Hi</h1>
-   );
-}
-}
+		super(props);	//Constructor uses super to call the Parents constructor 
+		}				//and also passes props to both
+	     render() {		//render method returns h1 element
+   		 return (
+			<h1>Hi</h1>
+  		 );
+	     }
+	}
 
 ##### To compose multiple components create an App parent component to render each child
 
