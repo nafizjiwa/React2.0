@@ -92,7 +92,7 @@ Use className not class using camelCase eg. onClick
 	};
 	ReactDOM.render(<MyComponent/>, document.getElementById("challenge-node"));
 
- ##### To pass an array to a JSX element, wrap in curly braces as javascript.
+##### To pass an array to a JSX element, wrap in curly braces as javascript.
 
 	const Child = (props) => {
   		return <p>{props.tasks.join(', ')}</p>
@@ -110,9 +110,22 @@ Use className not class using camelCase eg. onClick
 		);
 	  }
 
-   ##### To assign default props
+##### To assign default props
    
  	ComponentName.defaultProps = { //The values to assign in curly braces// }
+##### Override Default Props
+How? SET the prop values for a component.
+    
+    ComponentWithProps.defaultProps = {	         //default value for prop
+    quantity: 0
+    }
+    class MyComponent extend React.Component {
+	constructor(props){
+ 	  super(props);
+	}
+	render() {					// set value in component to override default
+    		return <ComponentWithProps quantity={10}/> //quantity is passed in prop with value of 10
+    	}							//surrounded with curly braces
 
  
 
