@@ -31,6 +31,7 @@ Use className not class using camelCase eg. onClick
 	 <div>something her</div>
 	)};
 |2nd ES6 class syntax||
+|:---:|:--:|
 
 	Class Demo extends React.Component {  //this class Demo extends React class
 		constructor(props) { //Demo class has a constructor METHOD defined
