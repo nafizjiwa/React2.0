@@ -25,10 +25,11 @@ Use className not class using camelCase eg. onClick
 ||- They are stateless which receives and renders data|
 ||- It returns either JSX or null|
 ||- Functions begin with capital|
-|const DemoComponent = function() {||
-|return (||
-| <div>something her</div>||
-|)};||
+
+	const DemoComponent = function() {
+	return (
+	 <div>something her</div>
+	)};
 |2nd ES6 class syntax|
 	Class Demo extends React.Component {  //this class Demo extends React class
 		constructor(props) { //Demo class has a constructor METHOD defined
