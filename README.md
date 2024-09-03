@@ -7,6 +7,9 @@ Rendering multiple elements wrap them in parentheses ( )
 <p></p> //Child element
 </div> );
 To comments out in JSX {/**/}
+
+	{/**The comment to comment out goes between these **//}
+ 
 Render JSX to the HTML DOM use React’s rendering API – ReactDOM
 Render a React element to the DOM with 
 ReactDOM.render( componentToRender, whereRenderAtTargetNode);
@@ -82,7 +85,7 @@ render() {		//render method returns h1 element
 	};
 	ReactDOM.render(<MyComponent/>, document.getElementById("challenge-node"));
 
- To pass an array to a JSX element, wrap in curly braces as javascript.
+ ##### To pass an array to a JSX element, wrap in curly braces as javascript.
 
 	const Child = (props) => {
   		return <p>{props.tasks.join(', ')}</p>
@@ -99,7 +102,10 @@ render() {		//render method returns h1 element
 			</ParentComponent>
 		);
 	  }
- 
+
+   ##### To assign default props
+   
+ 	ComponentName.defaultProps = { //The values to assign in curly braces// }
 
  
 
