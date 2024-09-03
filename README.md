@@ -30,6 +30,7 @@ Use className not class using camelCase eg. onClick
 	return (
 	 <div>something her</div>
 	)};
+ 
 |2nd ES6 class syntax||
 |:---:|:--:|
 
