@@ -26,6 +26,7 @@ Use className not class using camelCase eg. onClick
 ||- It returns either JSX or null|
 ||- Functions begin with capital|
 
+
 	const DemoComponent = function() {
 	return (
 	 <div>something her</div>
