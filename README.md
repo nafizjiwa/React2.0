@@ -18,7 +18,8 @@ First select the DOM to whereRenderAtTargetNode with
 ComponentToRender – const JSX = ( <h1>Render Me at the Target Node</> );
 JSX and JavaScript difference
 Use className not class using camelCase eg. onClick
-2 ways to create/define a React component 
+|2 ways to create/define a React component|
+|:---:|
 1st JavaScript function
 - They are stateless which receives and renders data
 - It returns either JSX or null
