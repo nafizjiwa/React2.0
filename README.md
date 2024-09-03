@@ -8,7 +8,7 @@ Rendering multiple elements wrap them in parentheses ( )
 </div> );
 To comments out in JSX {/**/}
 
-	{/**The comment to comment out goes between these **//}
+`{/**The comment to comment out goes between these **//}`
  
 Render JSX to the HTML DOM use React’s rendering API – ReactDOM
 Render a React element to the DOM with 
