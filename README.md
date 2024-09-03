@@ -117,15 +117,15 @@ Use className not class using camelCase eg. onClick
 How? SET the prop values for a component.
     
     ComponentWithProps.defaultProps = {	         //default value for prop
-    quantity: 0
+    	quantity: 0
     }
     class MyComponent extend React.Component {
-	constructor(props){
- 	  super(props);
-	}
-	render() {					// set value in component to override default
-    		return <ComponentWithProps quantity={10}/> //quantity is passed in prop with value of 10
-    	}							//surrounded with curly braces
+		constructor(props){
+ 	  	    super(props);
+		}
+		render() {					// set value in component to override default
+    			return <ComponentWithProps quantity={10}/> //quantity is passed in prop with value of 10
+    		}							//surrounded with curly braces
 
  
 
