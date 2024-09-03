@@ -26,10 +26,11 @@ Use className not class using camelCase eg. onClick
 ||- It returns either JSX or null|
 ||- Functions begin with capital|
 <br />
-	const DemoComponent = function() {
-	return (
-	 <div>something her</div>
-	)};
+		
+  	const DemoComponent = function() {
+		return (
+		 <div>something her</div>
+		)};
  
 |2nd ES6 class syntax||
 |:---:|:--:|
