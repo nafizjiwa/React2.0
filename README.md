@@ -132,4 +132,4 @@ How? SET the prop values for a component.
 	TheComponentName.propTypes = { propertyName: PropTypes.thePropertyType.isRequired }
 <br />
 
- 	Items.propTypes = { quantity: PropTypes.number.isRequired }
+ 	MyComponent.propTypes = { quantity: PropTypes.number.isRequired }
