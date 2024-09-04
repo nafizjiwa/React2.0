@@ -116,7 +116,7 @@ Use className not class using camelCase eg. onClick
 ##### Override Default Props
 How? SET the prop values for a component.
     
-    ComponentWithProps.defaultProps = {	         //default value for prop
+    TheComponentName.defaultProps = {	         //default value for property
     	quantity: 0
     }
     class MyComponent extend React.Component {
@@ -127,6 +127,8 @@ How? SET the prop values for a component.
     			return <ComponentWithProps quantity={10}/> //quantity is passed in prop with value of 10
     		}							//surrounded with curly braces
 
- 
+##### PropTypes help Define the Props(properties) You Expect
 
-
+	TheComponentName.propTypes = { propertyName: PropTypes.thePropertyType.isRequired }
+<br />
+ 	Items.propTypes = { quantity: PropTypes.number.isRequired }
