@@ -133,7 +133,7 @@ How? SET the prop values for a component.
 <br />
 
  	MyComponent.propTypes = { quantity: PropTypes.number.isRequired }
-##### Access Props With this.props when passing props to ES5 child class components
+##### Access Props With this.props when passing props to ES6 child class components
 
 		class App extends React.Component {
 		  render() {
@@ -144,5 +144,5 @@ How? SET the prop values for a component.
 		  render() {
 		    return (
 		        <div>
-		          <p>Hello, <strong>{this.props.name}</strong>!</p>   </div>
+		          <p>Hello, <strong>'{this.props.name}'</strong>!</p>   </div>
 		
