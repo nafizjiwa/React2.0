@@ -133,16 +133,41 @@ How? SET the prop values for a component.
 <br />
 
  	MyComponent.propTypes = { quantity: PropTypes.number.isRequired }
-##### Access Props With this.props when passing props to ES6 child class components
+##### Access Props With this.props when passing props to ES6 child class components and not a stateless functional component
 
 		class App extends React.Component {
 		  render() {
 		    return (
 		        <div>
 		            <Welcome name={'zayyan'}/>	</div>
-		class Welcome extends React.Component {    //CHILD CLASS COMPONENT
+		class Welcome extends React.Component {    //ES6 CHILD CLASS COMPONENT
 		  render() {
 		    return (
 		        <div>
 		          <p>Hello, <strong>'{this.props.name}'</strong>!</p>   </div>
+	    
+##### Props with Stateless Functional Components
+
+	class CampSite extends React.Component {	/CampSite renders child Camper
+	  render() {   return (
+		        <Camper />
+	    	); }				// both types of function render
+	const Camper = function (props){  return <p>{props.name}</p>  };	//renders html and passed in prop
+
+	Camper.defaultProps = { name: 'CamperBot'}; 	// Camper is assigned default properties
+	Camper.propTypes = {name: PropTypes.string.isRequired };	
+ 			//propTypes are defined on the Camper component which requires name as a provided prop of type string
+
+function you write which accepts props and returns JSX. A stateless component, on the other hand, is a class that extends React.Component, but does not use internal state (covered in the next challenge). Finally, a stateful component is a class component that does maintain its own internal state.
 		
+##### Create a Stateful Component
+
+How? Declare a state property on the component class in its constructor
+
+
+		this.state = { //JavaScript object
+  			property: value 
+     			}
+
+The state can updated, rendered in the UI, or passed as a prop to child components.  
+`NOTE: class components are created by extending React.Component.`
