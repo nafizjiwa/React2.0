@@ -232,11 +232,11 @@ Eg.
 
 `this.functionName = this.functionName.bind(this);`
 
- `this.increment = this.increment.bind(this);`
+`this.increment = this.increment.bind(this);`  - Binds this to the function increment. This must be bound to all function in component
 
-`<button className='inc' onClick={this.increment}>Increment!</button>`
+`<button className='inc' onClick={this.increment}>Increment!</button>`  - When the button is clicked the funciton increment is triggered
 
-`increment() {`
+`increment() {`						- The function increment changes the state with .setState() by '+ 1'
 	`this.setState(state => ({`
 	`count: state.count + 1`
 	`}));`
