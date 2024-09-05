@@ -28,7 +28,7 @@ Rendering multiple elements wrap them in parentheses ( )
 
 |2 ways to create/define a React component||
 |:---:|:--:|
-|1st JavaScript function|
+|1st JavaScript function||
 ||- They are stateless which receives and renders data|
 ||- It returns either JSX or null|
 ||- Functions begin with capital|
