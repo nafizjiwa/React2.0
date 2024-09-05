@@ -8,18 +8,19 @@ Rendering multiple elements wrap them in parentheses ( )
 	<p></p> //Child element
 	</div> );
 
-#### To comments out in JSX {/**/}
+##### To comments out in JSX {/**/} --> 
+					`{/*The comment to comment out goes between these */}`
 
-`{/*The comment to comment out goes between these */}`
- 
-Render JSX to the HTML DOM use React’s rendering API – ReactDOM
-Render a React element to the DOM with 
-ReactDOM.render( componentToRender, whereRenderAtTargetNode);
-First select the DOM to whereRenderAtTargetNode with 
-	document.getElementById(‘NodesIdValue’).
+##### Render JSX to the HTML DOM by using React’s rendering API -->
+									`ReactDOM`
+##### Render a React element to the DOM with --> 
+						`ReactDOM.render( componentToRender, whereRenderAtTargetNode);`
+
+1st select the DOM target node where to Render with `document.getElementById(‘NodesIdValue’).`
+	
 ComponentToRender – const JSX = ( <h1>Render Me at the Target Node</> );
-JSX and JavaScript difference
-Use className not class in camelCase eg. onClick
+One JSX and JavaScript difference --> Use className not class in camelCase eg. onClick
+
 
 |2 ways to create/define a React component||
 |:---:|:--:|
