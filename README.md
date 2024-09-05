@@ -19,8 +19,10 @@ Rendering multiple elements wrap them in parentheses ( )
 1st select the DOM target node where to Render with `document.getElementById(‘NodesIdValue’).`
 	
 ComponentToRender – const JSX = ( <h1>Render Me at the Target Node</> );
-One JSX and JavaScript difference --> Use className not class in camelCase eg. onClick
 
+One JSX and JavaScript difference --> 
+`Use className not class in camelCase eg. onClick`
+<br/>
 
 |2 ways to create/define a React component||
 |:---:|:--:|
