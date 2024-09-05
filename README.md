@@ -26,9 +26,9 @@ Rendering multiple elements wrap them in parentheses ( )
 `Use className not class in camelCase eg. onClick`
 <br/>
 
-|2 ways to create/define a React component||
-|:---:|:--:|
+### 2 ways to create/define a React component
 |1st JavaScript function||
+|:---:|:--:|
 ||- They are stateless which receives and renders data|
 ||- It returns either JSX or null|
 ||- Functions begin with capital|
