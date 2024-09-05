@@ -236,11 +236,11 @@ Eg.
 
 `<button className='inc' onClick={this.increment}>Increment!</button>`  - When the button is clicked the funciton increment is triggered
 
-`increment() {`						- The function increment changes the state with .setState() by '+ 1'
-	`this.setState(state => ({`
-	`count: state.count + 1`
-	`}));`
-`}`
+`increment() {`						- The function increment changes the state with .setState() by '+ 1' <br/>
+	`this.setState(state => ({`												<br/>
+	`count: state.count + 1`												<br/>
+	`}));`															<br/>
+`}`																<br/>
 
 
 	 
