@@ -12,15 +12,15 @@ Rendering multiple elements wrap them in parentheses ( )
 					`{/*The comment to comment out goes between these */}`
 
 ##### Render JSX to the HTML DOM by using React’s rendering API -->
-	`ReactDOM`
+`ReactDOM`
 ##### Rendering a React element --> 
-	`ReactDOM.render( componentToRender, whereRenderAtTargetNode);`
+`ReactDOM.render( componentToRender, whereRenderAtTargetNode);`
 
 1st Select the DOM target node where to Render --> 
-	`document.getElementById(‘NodesIdValue’).`
+`document.getElementById(‘NodesIdValue’).`
 	
 2nd ComponentToRender: 
-	`const JSX = (<h1>Render Me at the Target Node</>);`
+`const JSX = (<h1>Render Me at the Target Node</>);`
 
 One JSX and JavaScript difference --> 
 `Use className not class in camelCase eg. onClick`
