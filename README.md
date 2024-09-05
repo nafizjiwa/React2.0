@@ -41,11 +41,13 @@ Rendering multiple elements wrap them in parentheses ( )
  
 |2nd ES6 class syntax||
 |:---:|:--:|
+||classes extends React.Component class|
+||classes has a constructor METHOD defined|
 
-	Class Demo extends React.Component {  //this class Demo extends React class
-		constructor(props) { //Demo class has a constructor METHOD defined
+	class DemoComponent extends React.Component {  
+		constructor(props) { 
 		super(props);	//Constructor uses super to call the Parents constructor 
-		}				//and also passes props to both
+		}				//and also passes props to both Parent and Child
 	     render() {		//render method returns h1 element
    		 return (
 			<h1>Hi</h1>
