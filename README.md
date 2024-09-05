@@ -171,3 +171,59 @@ How? Declare a state property on the component class in its constructor
 
 The state can updated, rendered in the UI, or passed as a prop to child components.  
 `NOTE: class components are created by extending React.Component.`
+
+
+##### Render State in the User Interface
+
+State allows to track data and if it changes to make changes in UI by triggering render
+
+	class MyComponent extends React.Component {	//Define a components initial state below	
+	    this.state = { 			//Initializing state in constructor makes component stateful
+	      name: 'freeCodeCamp'
+	  render() {				//state data can be accessed in render
+	    return (
+	          <h1>{this.state.name}</h1> //access state data with this.state
+
+##### Render State another way
+
+	    render() {		//JavaScript can be written in render before return and accessed in return
+	      const name = this.state.name;
+	    return (
+	      <div>
+	          <h1>{name}</h1>
+	      </div>
+       
+##### Set State with this.setState
+
+To update a components state call method this.setState() 
+Pass in an object with key value pairs.
+Keys = state
+
+ 	this.setState({	    //To update username stored in state
+  		username: 'Lewis'
+		});
+
+
+Eg. 
+	    this.state = {
+	      name: 'Initial State' 		//Initial state on the UI is the h1 below
+	    };
+	    this.handleClick = this.handleClick.bind(this);  //Binds this to the class method handleClick
+	   }
+	  handleClick() {		//event handler method used to update state
+	      this.setState({
+	        name: 'React Rocks!'
+	      })
+	   render() {
+	     return (
+	       <div>
+	         <button onClick={this.handleClick}>Click Me</button>      //event handler triggered by button click
+	         <h1>{this.state.name}</h1>	//When button clicked h1 is changed from initial state to new state in handlClick
+	       </div>
+
+ ##### Bind 'this' to a Class Method
+
+ this.handleClick = this.handleClick.bind(this);
+
+
+	 
