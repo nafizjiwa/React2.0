@@ -232,13 +232,15 @@ Eg.
 
 `this.functionName = this.functionName.bind(this);`
 
-	<button className='inc' onClick={this.increment}>Increment!</button>
+ 	`this.increment = this.increment.bind(this);`
 
-	increment() {
+	`<button className='inc' onClick={this.increment}>Increment!</button>`
+
+	`increment() {
 	          this.setState(state => ({
 	          count: state.count + 1
 	           }));
-	        }
+	        }`
 
 
 	 
