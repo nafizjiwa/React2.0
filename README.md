@@ -230,7 +230,15 @@ Eg.
 
  ##### Bind 'this' to a Class Method
 
- this.handleClick = this.handleClick.bind(this);
+`this.functionName = this.functionName.bind(this);`
+
+	<button className='inc' onClick={this.increment}>Increment!</button>
+
+	increment() {
+	          this.setState(state => ({
+	          count: state.count + 1
+	           }));
+	        }
 
 
 	 
