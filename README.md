@@ -3,10 +3,12 @@
 To write JavaScript within JSX surround code with curly braces { - javascript code - }
 JSX must return a single element so a parent element should wrap all nested elements.
 Rendering multiple elements wrap them in parentheses ( )
-( <div> //Parent element
-<p></p> //Child element
-</div> );
-To comments out in JSX {/**/}
+
+	( <div> //Parent element
+	<p></p> //Child element
+	</div> );
+
+#### To comments out in JSX {/**/}
 
 `{/*The comment to comment out goes between these */}`
  
@@ -17,7 +19,7 @@ First select the DOM to whereRenderAtTargetNode with
 	document.getElementById(‘NodesIdValue’).
 ComponentToRender – const JSX = ( <h1>Render Me at the Target Node</> );
 JSX and JavaScript difference
-Use className not class using camelCase eg. onClick
+Use className not class in camelCase eg. onClick
 
 |2 ways to create/define a React component||
 |:---:|:--:|
