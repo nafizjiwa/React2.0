@@ -242,5 +242,22 @@ Eg.
 	`}));`															<br/>
 `}`																<br/>
 
+##### Controlled Input
+
+	class ControlledInput extends React.Component {
+	  etc..
+	    this.handleChange = this.handleChange.bind(this);  //Bind handle function
+	  }
+	      handleChange(event){			//Set or change state for input
+	        this.setState({
+	          input: event.target.value		//To access string from input use event
+	        })
+	      };
+	  render() {
+	     etc..				//value below updates the state with what is typed in
+	         <input type="text" onChange={this.handleChange}  value={this.state.input} />
+	        <p>{this.state.input}</p>		//without value the text update from the browser and not the state
+     	etc..
+
 
 	 
