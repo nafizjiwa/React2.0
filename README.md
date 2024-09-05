@@ -27,9 +27,8 @@ Rendering multiple elements wrap them in parentheses ( )
 <br/>
 
 ### 2 ways to create/define a React component
-|1st JavaScript function||
+|1st JavaScript function|- They are stateless which receives and renders data|
 |:---:|:--:|
-||- They are stateless which receives and renders data|
 ||- It returns either JSX or null|
 ||- Functions begin with capital|
 <br />
@@ -39,9 +38,8 @@ Rendering multiple elements wrap them in parentheses ( )
 		 <div>something her</div>
 		)};
  
-|2nd ES6 class syntax||
+|2nd ES6 class syntax|classes extends React.Component class|
 |:---:|:--:|
-||classes extends React.Component class|
 ||classes has a constructor METHOD defined|
 
 	class DemoComponent extends React.Component {  
