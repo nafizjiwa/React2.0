@@ -242,7 +242,7 @@ Eg.
 	`}));`															<br/>
 `}`																<br/>
 
-##### Controlled Input
+##### Controlled Input b/c React can control the internal state of an element and make them controlled components
 
 	class ControlledInput extends React.Component {
 	  etc..
