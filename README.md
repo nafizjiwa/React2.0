@@ -259,5 +259,31 @@ Eg.
 	        <p>{this.state.input}</p>		//without value the text update from the browser and not the state
      	etc..
 
+##### Pass a callback as Props
+
+	class MyApp extends React.Component {		//Parent component
+	    etc... contructor, initial states for input and submit also binding of handlChange method
+	  }
+	  handleChange(event) {
+	    this.setState({
+	      inputValue: event.target.value   //value typed in to input box by user set to inputValue
+	    });					// now set to state object as this.state.inputValue
+	  }
+	  render() {
+	    return (			//Parent component renders the children components below 
+	          <GetInput input={this.state.inputValue} handleChange={this.handleChange}/> //GetInput passed 2 props
+	          <RenderInput input={this.state.inputValue}/>		
+	   		//property input is passed inputValue from state so it is visible on screen what is input to GetInput 
+		  	//GetInput prop1 passed in is input and assigned inputValue from state
+		    	//GetInput prop2 passed in is an input handler handleChange to the prop handleChange 
+			//After typing in the field of GetInput it calls the function handleChange in parent and updates input in state
+	class GetInput extends React.Component { 		///child component
+		etc.
+	          <input value={this.props.input} onChange={this.props.handleChange}/>
+	class RenderInput extends React.Component { 		///child component
+		etc.
+	        <p>{this.props.input}</p>
+
+
 
 	 
