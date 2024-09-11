@@ -5,10 +5,11 @@ To write JavaScript within JSX surround code with curly braces
 	 { - javascript code - }
 JSX returns a single element so a parent element should wrap all nested elements --> parentheses ( allows rendering of multiple elements)
 
-	( 	<div> 			//This is the Parent element
+ 	return (
+	 	<div> 			//This is the Parent element
 			<p></p> 	//This is the Child element
 		</div> 
-  	);
+  		);
 
 ##### To comments out in JSX {/**/} --> 
 					`{/*The comment to comment out goes between these */}`
