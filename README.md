@@ -1,12 +1,14 @@
 # React2.0
 
-To write JavaScript within JSX surround code with curly braces { - javascript code - }
-JSX must return a single element so a parent element should wrap all nested elements.
-Rendering multiple elements wrap them in parentheses ( )
+To write JavaScript within JSX surround code with curly braces
 
-	( 	<div> //The Parent element
-			<p></p> //The Child element
-		</div> );
+	 { - javascript code - }
+JSX returns a single element so a parent element should wrap all nested elements --> parentheses ( allows rendering of multiple elements)
+
+	( 	<div> 			//This is the Parent element
+			<p></p> 	//This is the Child element
+		</div> 
+  	);
 
 ##### To comments out in JSX {/**/} --> 
 					`{/*The comment to comment out goes between these */}`
