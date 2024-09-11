@@ -11,7 +11,7 @@ JSX returns a single element so a parent element should wrap all nested elements
 		</div> 
   		);
 
-##### To comments out in JSX {/**/} --> 
+##### To comments out in JSX {/*open close*/} --> 
 					`{/*The comment to comment out goes between these */}`
 
 ##### Render JSX to the HTML DOM by using React’s rendering API -->
