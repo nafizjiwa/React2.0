@@ -290,16 +290,60 @@ Eg.
 
 	function Talker(){
 	talker component with event handler talk
-	    function talk(){
+	    function handleClick(){
 	    }
-	    return <Button talk={talk}/> pass event handler to button as a 'prop'
+	    return <Button onCLick={handleClick}/> pass event handler to button as a 'prop'
 	}
 
 ##### Receive an Event Handler as a prop
 Give that JSX element an attribute and value in curly braces. Attribute: name = event name (onClick or onHover), Value = event handler.
 
-	<button onClick={props.talk}>
+	<button onClick={props.onClick}>
 	      Click me!
 	</button>
+ 
+ ##### props.children
+
+ Returns everything in between a component’s opening and closing JSX tags.
+
+	 <List type='Living Musician'>
+        	<li>Sachiko M</li>		child
+        	<li>Harvey Sid Fisher</li>	child
+	 </List>
+If a component > 1 child between its JSX tags, then props.children returns [array of children] otherwise a single child, not in an array.
+
+##### Giving Default Values to props
+ 
+###### 3 ways to specify default values for props
+1st Method is adding a defaultProps static property to the component:
+
+	function Example(props) {
+	  return <h1>{props.text}</h1>
+	}
+	
+	Example.defaultProps = {
+	  text: 'This is default text',
+	};
+
+2nd Method specify the default value directly in the function definition:
+
+	function Example({text='This is default text'}) {
+	   return <h1>{text}</h1>
+	}
+
+3rd Method set the default value in the function body:
+
+	function Example(props) {
+	  const {text = 'This is default text'} = props;
+	  return <h1>{text}</h1>
+	}
+ 
+ ##### Pass Props to a component
+
+ How? Give the component an attribute:
+
+	<Greeting name="Jamel" />
+
+
 
 	 
