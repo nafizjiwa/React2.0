@@ -286,7 +286,20 @@ Eg.
 	class RenderInput extends React.Component { 		///child component
 		etc.
 	        <p>{this.props.input}</p>
+##### Pass an Event Handler as a prop
 
+	function Talker(){
+	talker component with event handler talk
+	    function talk(){
+	    }
+	    return <Button talk={talk}/> pass event handler to button as a 'prop'
+	}
 
+##### Receive an Event Handler as a prop
+Give that JSX element an attribute and value in curly braces. Attribute: name = event name (onClick or onHover), Value = event handler.
+
+	<button onClick={props.talk}>
+	      Click me!
+	</button>
 
 	 
