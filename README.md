@@ -17,12 +17,12 @@ JSX returns a single element so a parent element should wrap all nested elements
 #### Render JSX to the HTML DOM by using React’s rendering API --> `ReactDOM`
 
 #### To Render a React element --> `ReactDOM.render( componentToRender, whereToRender);`
-#### 1st Select the target DOM node/element or where to Render --> `document.getElementById(‘NodesIdValueHere’).`	
-#### 2nd The ComponentToRender --> `const componentToRender = (<h1>Render Me at the Target Node</>);`
+#### * 1st Select the target DOM node/element or where to Render --> `document.getElementById(‘NodesIdValueHere’).`	
+#### * 2nd The ComponentToRender --> `const componentToRender = (<h1>Render Me at the Target Node</>);`
 
 #### To render a React element --> `ReactDOM.createRoot(document.getElementById(DOM-Element)).render(ReactElement)`
-#### 1st pass the DOM element to ReactDOM.createRoot() --> `const root = ReactDOM.createRoot(document.getElementById('root'));`
-#### Then pass the React element to root.render() --> `const element = <h1>Hello, world</h1>; --> root.render(element);`
+#### * 1st pass the DOM element to ReactDOM.createRoot() --> `const root = ReactDOM.createRoot(document.getElementById('root'));`
+#### * Then pass the React element to root.render() --> `const element = <h1>Hello, world</h1>; --> root.render(element);`
 
 ##### One JSX and JavaScript difference --> 
 `Use className not class in camelCase eg. onClick`
