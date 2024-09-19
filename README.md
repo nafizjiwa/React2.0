@@ -14,10 +14,8 @@ JSX returns a single element so a parent element should wrap all nested elements
 ##### To comments out in JSX {/*open close*/} --> 
 					`{/*The comment to comment out goes between these */}`
 
-##### Render JSX to the HTML DOM by using React’s rendering API -->
-`ReactDOM`
-##### Rendering a React element --> 
-`ReactDOM.render( componentToRender, whereToRender);`
+#### Render JSX to the HTML DOM by using React’s rendering API --> `ReactDOM`
+#### To Render a React element --> `ReactDOM.render( componentToRender, whereToRender);`
 
 ##### 1st Select the target DOM node or where to Render --> 
 `document.getElementById(‘NodesIdValueHere’).`
